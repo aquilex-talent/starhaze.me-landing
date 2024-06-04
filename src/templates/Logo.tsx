@@ -1,5 +1,3 @@
-import { AppConfig } from '@/utils/AppConfig';
-
 const Logo = () => (
   <div className="flex items-center text-xl font-semibold">
     <svg
@@ -16,7 +14,7 @@ const Logo = () => (
       <rect x="15" y="4" width="6" height="16" rx="1" />
       <path d="M4 20h14" />
     </svg>
-    {AppConfig.name}
+    {}
   </div>
 );
 

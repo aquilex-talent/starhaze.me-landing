@@ -1,4 +1,4 @@
-import { cn } from '@/utils/Helpers';
+import { cn } from '@/lib/cn';
 
 const Background = (props: {
   children: React.ReactNode;

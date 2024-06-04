@@ -1,20 +1,16 @@
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
 
 import { CenteredFooter } from '@/features/landing/CenteredFooter';
 import { Section } from '@/features/landing/Section';
-import { AppConfig } from '@/utils/AppConfig';
 
 import { Logo } from './Logo';
 
 const Footer = () => {
-  const t = useTranslations('Footer');
-
   return (
     <Section className="pb-16 pt-0">
       <CenteredFooter
         logo={<Logo />}
-        name={AppConfig.name}
+        name={"StarHaze"}
         iconList={
           <>
             <li>
@@ -77,33 +73,18 @@ const Footer = () => {
         legalLinks={
           <>
             <li>
-              <Link href="/">{t('terms_of_service')}</Link>
+              <Link href="/">Terms of Service</Link>
             </li>
             <li>
-              <Link href="/">{t('privacy_policy')}</Link>
+              <Link href="/">Privacy Policy</Link>
             </li>
           </>
         }
       >
         <li>
-          <Link href="/">{t('product')}</Link>
+          <Link href="/">Product</Link>
         </li>
 
-        <li>
-          <Link href="/">{t('docs')}</Link>
-        </li>
-
-        <li>
-          <Link href="/">{t('blog')}</Link>
-        </li>
-
-        <li>
-          <Link href="/">{t('community')}</Link>
-        </li>
-
-        <li>
-          <Link href="/">{t('company')}</Link>
-        </li>
       </CenteredFooter>
     </Section>
   );
